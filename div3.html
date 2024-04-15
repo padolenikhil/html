@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHTRIX - Gaming Event</title>
+  <style>
+        #myForm {
+            display: none;
+            margin-top: 20px;
+        }
+       .butt{
+          display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border: 3px solid green;}
+ 
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; /* Light gray background */
+    }
+
+    .container {
+      max-w idth: 1200px;
+      margin: 0 auto;
+
+    /* Header styles */
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;   
+      border-radius: 10px;
+      margin-bottom: 20px;
+    } 
+
+    .header h1, .header h2, .header h3 {
+      margin: 5px 0;
+    }
+
+    /* Event section styles */
+    .event-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .event {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .event h2 {
+      color: #333;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .event p {
+      color: #555;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .event img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Header -->
+  <div class="header">
+    <h1>Lokmanya Tilak Jankalyan Shikshan Sanstha's</h1>
+    <h2>Priyadarshini J.L College of Engineering, Nagpur</h2>
+    <h3>TECHTRIX - Gaming Event</h3>
+  </div>
+
+  <!-- Event section -->
+  <div class="event-section">
+    <!-- Event 1 -->
+    <div class="event">
+      <h2>C.O.D</h2>
+      <p>Call Of Duty in Mobile</p>
+      <p>Entry Fee: ₹500/-</p>
+      <img src="https://gamingonphone.com/wp-content/uploads/2022/02/Call-of-Duty-Mobile-game-cover-1.jpg" alt="C.O.D Image">
+     
+    </div>
+
+    <!-- Event 2 -->
+    <div class="event">
+      <h2>LUDO</h2>
+      <p>Ludo Championship</p>
+      <p>Entry Fee: ₹50/-</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq9-7nKUgDuJ8kKCKK0FQ5dbbGax13xITO7qP7V8LUJA&s" alt="Ludo Image">
+     </div>
+
+    <!-- Event 3 -->
+    <div class="event">
+      <h2>FREE FIRE	</h2>
+      <p></p>
+      <p>Entry Fee: ₹0.50/-</p>
+      <img src="https://cdn.siasat.com/wp-content/uploads/2022/03/Free_Fire.jpg" alt="Free Fire Image">
+    </div>
+  </div>
+</div>
+<div class="butt">
+<button onclick="showForm()">Register Here</button>
+
+<div id="myForm">
+    <form onsubmit="event.preventDefault(); submitForm();">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="event">Event:</label><br>
+        <input type="text" id="event" name="event"><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</div>
+<script>
+    function showForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function submitForm() {
+        alert("Thank you for your submission!");
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #myForm {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="showForm()">Click me</button>
+
+<div id="myForm">
+    <form onsubmit="event.preventDefault(); submitForm();">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="event">Event:</label><br>
+        <input type="text" id="event" name="event"><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<script>
+    function showForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function submitForm() {
+        alert("Thank you for your submission!");
+    }
+</script>
+
+</body>
+</html>--->
+

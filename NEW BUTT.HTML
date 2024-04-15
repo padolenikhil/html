@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHTRIX - Gaming Event</title>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; /* Light gray background */
+    }
+
+    /* Layout styles */
+    .container {
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Component styles */
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .event-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .event {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: calc(33.33% - 20px); /* Adjusted width */
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .event img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    /* Form styles */
+    #myForm {
+      display: none;
+      margin-top: 20px;
+    }
+
+    /* Form layout styles */
+    #myForm form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #myForm label {
+      margin-bottom: 5px;
+    }
+
+    #myForm input[type="text"],
+    #myForm input[type="email"],
+    #myForm input[type="submit"] {
+      width: 50%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    #myForm input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Centered button container */
+    .centered-button {
+      text-align: center;
+    }
+
+    /* Decorative button styles */
+    .register-button {
+      padding: 15px 30px;
+      background-color: #333;
+      color: #fff;
+      border: 2px solid #333;
+      border-radius: 30px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #fff;
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Header -->
+  <header class="header">
+    <h1>Lokmanya Tilak Jankalyan Shikshan Sanstha's</h1>
+    <h2>Priyadarshini J.L College of Engineering, Nagpur</h2>
+    <h2>Department of Artificial intelligence</h2>
+    <h3>TECHTRIX - Gaming Event</h3>
+  </header>
+
+  <!-- Event section -->
+  <section class="event-section">
+    <!-- Event 1 -->
+    <article class="event">
+      <h2>C.O.D</h2>
+      <p>Call Of Duty in Mobile</p>
+      <p>Entry Fee: ₹500/-</p>
+      <img src="https://gamingonphone.com/wp-content/uploads/2022/02/Call-of-Duty-Mobile-game-cover-1.jpg" alt="C.O.D Game Cover Image">
+    </article>
+
+    
+
+    <!-- Event 3 -->
+    <article class="event">
+      <h2>B.G.M.I</h2>
+      <p>BATTELGROUNDS MOBILE INDIA<br>Entry Fee: ₹250/-</p>
+      <img src="https://images.indianexpress.com/2023/05/bgmi-version-2point5.jpg" alt="Free Fire Game Image">
+    </article>
+  </section>
+</div>
+
+<div id="myForm">
+  <form onsubmit="event.preventDefault(); submitForm();">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="event">Event:</label>
+    <input type="text" id="event" name="event" required>
+    <input type="submit" value="Register">
+  </form>
+</div>
+
+<div class="centered-button">
+  <button class="register-button" onclick="showForm()">Register Here</button>
+</div>
+
+<script>
+  function showForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function submitForm() {
+    alert("Thank you for your registration!");
+  }
+</script>
+
+</body>
+</html>
